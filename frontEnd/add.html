@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-    
+    <div>
+        <a href="index.html">View pets</a>
+    </div>
+    <h1>Add pet</h1>
+    <form>
+        <label for="pet-name">Name</label>
+        <input type="text" id="pet-name" name="pet-name">
+        <label for="pet-age">Age</label>
+        <input type="number" id="pet-age" name="pet-name" min="0">
+        <label for="pets">Type</label>
+        <select name="petlist" id="pets" form="petform">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
 </body>
 </html>
